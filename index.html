@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Developers Weather Test - Javiera Rico.</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	 <link rel="icon" type="image/png" sizes="32x32" href="shuttle.svg">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+<body>
+	<header>
+		<!--PAGE TITLE-->
+		<h1 class="title">HTML Developers Weather Test</h1>
+	</header>
+
+	<main>
+		<div class="video-container">
+			<!--VIDEO AND OVERLAY-->
+			<video id="myVideo" controls width="1280" height="720" frameborder="0" allowfullscreen>
+				<source src="http://static.innovid.com/media/encoded/07_16/22717/11_source_17827_55212.mp4">
+			</video>
+				<div class="img-container">
+					<h4>Check Minneapolis Weather</h4>
+					<button class="button" id="button">Click to Expand</button>
+				</div>
+
+			<!--SLATE-->
+				<div class="weather-container">
+					<div class="content">
+						<div class="top">
+							<button class="back">&lt; Back</button>
+							<div class="app-title"><p>Three Day Forecast For <span id="city">Minneapolis</span></p></div>
+						</div>
+
+						<div class="weather-container__card">
+
+							<div class="weather-container__card__section-one">
+								<div class="date">Date: <span id="dateOne"></span></div>
+								<div class="forecast">
+									<div class="forecast__day">
+										<div class="temp-day">Day: <span id="tempDayOne">7</span><span class="grade">°</span></div>
+										<div class="description" id="descDayOne">Partly Cloudy</div>
+										<img src="" alt="icon" class="icon" id="iconDayOne">
+									</div>
+									<div class="forecast__night">
+										<div class="temp-night">Night: <span id="tempNightOne">-7<span class="grade">°</span></span></div>
+										<div class="description" id="descNightOne">Cloudy</div>
+										<img src="" alt="icon" class="icon" id="iconNightOne">
+									</div>
+								</div>
+								<div class="sunrise">Sunrise: <span id="sunriseOne"></span></div>
+								<div class="sunset">Sunset: <span id="sunsetOne"></span></div>
+							</div>
+
+							<div class="weather-container__card__section-two">
+								<div class="date">Date: <span id="dateTwo"></span></div>
+								<div class="forecast">
+									<div class="forecast__day">
+										<div class="temp-day">Day: <span id="tempDayTwo">12</span><span class="grade">°</span></span></div>
+										<div class="description" id="descDayTwo">Sunny</div>
+										<img src="" alt="icon" class="icon" id="iconDayTwo">
+									</div>
+									<div class="forecast__night">
+										<div class="temp-night">Night: <span id="tempNightTwo">0</span><span class="grade">°</span></div>
+										<div class="description" id="descNightTwo">Clear</div>
+										<img src="" alt="icon" class="icon" id="iconNightTwo">
+									</div>
+								</div>
+								<div class="sunrise">Sunrise: <span id="sunriseTwo"></span></div>
+								<div class="sunset">Sunset: <span id="sunsetTwo"></span></div>
+							</div>
+
+							<div class="weather-container__card__section-three">
+								<div class="date">Date:	<span id="dateThree"></span></div>
+								<div class="forecast">
+									<div class="forecast__day">
+										<div class="temp-day">Day: <span id="tempDayThree">7</span><span class="grade">°</span></div>
+										<div class="description" id="descDayThree">Partly Cloudy</div>
+										<img src="" alt="icon" class="icon" id="iconDayThree">
+									</div>
+									<div class="forecast__night">
+										<div class="temp-night">Night: <span id="tempNightThree">-7</span><span class="grade">°</span></div>
+										<div class="description" id="descNightThree">Partly Cloudy</div>
+										<img src="" alt="icon" class="icon" id="iconNightThree">
+									</div>
+								</div>
+								<div class="sunrise">Sunrise: <span id="sunriseThree"></span></div>
+								<div class="sunset">Sunset: <span id="sunsetThree"></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+			<!--TEXT-->
+		<div class="content-text">
+			<h3>Lorem ipsum dolor, sit, amet consectetur adipisicing elit.</h3>
+			<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Accusamus ea eligendi, officiis sit fuga sunt cupiditate sed rem cum laudantium, blanditiis necessitatibus iusto repudiandae dolor doloribus ratione? Aspernatur, dolorum, aperiam. Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Quasi iure blanditiis soluta temporibus expedita obcaecati modi harum commodi, possimus quaerat, error nihil laboriosam consequuntur quo fugiat asperiores natus sequi sint! Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Id tempore quasi ipsa explicabo perferendis placeat aspernatur, inventore illum adipisci voluptates repudiandae fugiat iste unde excepturi quos quam! Aspernatur, ducimus, odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam porro accusantium laudantium qui provident laboriosam ratione ullam ex libero! Quia officiis nisi, dolorum sed assumenda quaerat, cum natus adipisci eligendi.</p>
+		</div>
+	</main>
+
+	<!--FOOTER-->
+  <footer>
+  	<p class="attribution">
+  		Coded by <a href="https://github.com/javierarico" target="_blank">Javiera Rico</a>.
+  	</p>
+  </footer>
+
+  <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>

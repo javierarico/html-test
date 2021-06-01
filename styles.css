@@ -1,0 +1,395 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 15px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Lexend Deca', sans-serif;
+	background-color: hsl(10, 100%, 97%);
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-family: 'Roboto', sans-serif;
+	padding: 5vh;
+	background-color: hsl(208, 1%, 60%);
+	color: hsl(208, 0%, 100%);
+	text-shadow: 5px 3px 5px rgba(231, 163, 245, 0.3);
+	padding-bottom: 15vh;
+}
+
+.title {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#myVideo {
+	display: flex;
+  	justify-content: center;
+  	margin: -7vh auto;
+  	width: 100%;
+  	max-width: 1280px;
+  	height: auto;
+}
+
+.img-container {
+	position: absolute;
+	bottom: 50%;
+	left: 45%;
+	background-color: hsl(223, 54%, 43%);
+  	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 4px inset hsl(0, 0%, 20%, 0.5);
+	font-family: 'Open Sans', sans-serif;
+	width: 85vw;
+	max-width: 500px;
+	height: 8vh;
+}
+
+.img-container h4 {
+	width: 50vw;
+	height: auto;
+	color: #fff;
+	font-size: 1rem;
+	letter-spacing: 0.5px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+	margin-left: 5vw;
+}
+
+.img-container button {
+	text-decoration: none;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: #000;
+	cursor: pointer;
+}
+
+.img-container .button {
+	width: 25vw;
+	height: auto;
+	padding: 4px;
+	margin-right: 4vw;
+	border: none;
+	background-color: rgb(255 190 0);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	transition-property: background-color;
+	transition-timing-function: 2s;	
+}
+
+.img-container .button:hover {
+	background-color: rgb(255 127 51);
+	color: #fff;
+	border: 2px solid #333;
+}
+
+.img-container .button:active {
+	background-color: rgb(255 70 0);
+	color: #fff;
+	border: 2px solid #333;
+}
+
+.weather-container {
+	width: 100%;
+	height: 110vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+ 	top: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.content {
+	width: 92vw;
+	height: 105vh;
+	margin: 2% auto;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+.top {
+	margin-left: 20px;
+}
+
+.top .back {
+	border: none;
+	background-color: #fff;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.back:hover {
+	color: hsl(201, 100%, 50%);
+}
+
+.top .app-title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.3rem;
+}
+
+.weather-container__card {
+	display: grid;
+	grid-template-rows: repeat(auto-fill, minmax(30%, min-content));
+	grid-gap: 0px;
+	width: 85vw;
+  	max-width: 1280px;
+	height: 100vh;
+}
+
+.weather-container__card__section-one {
+	width: 55vw;
+	height: 30vh;
+	justify-self: center;
+	margin: 0;
+	border-bottom: 1px solid grey;
+}
+
+.weather-container__card__section-two {
+	width: 55vw;
+	height: 30vh;
+	justify-self: center;
+	border-bottom: 1px solid grey;
+}
+
+.weather-container__card__section-three {
+	width: 55vw;
+	height: 30vh;
+	justify-self: center;
+	margin-bottom: 15px;
+}
+
+.forecast {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr;
+}
+
+.icon {
+	width: 5rem;
+	height: 3rem;
+}
+
+.date, .temp-day, .temp-night, .description, .icon, .sunrise, .sunset {
+	margin: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8rem;
+
+}
+
+.content-text {
+	width: 90vw;
+	max-width: 1280px;
+	margin: 12vh auto;
+}
+
+.content-text h3 {
+	font-size: 1.1rem;
+	padding: 20px;
+	text-align: center;
+	background-color: hsl(290, 80%, 80%);
+	border-radius: 5px 5px 0 0;
+}
+
+.content-text p {
+	font-size: 0.8rem;
+	line-height: 1.5;
+	text-align: justify;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 0 0 5px 5px;
+}
+
+footer {
+	background-color: hsl(290, 80%, 80%);
+}
+
+.attribution {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 1rem;
+	text-align: right;
+	padding: 7vh;
+}
+
+.attribution a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: #999;
+}
+
+.attribution a:hover {
+	color: hsl(269.25, 100%, 50%); 
+}
+
+
+@media screen and (min-width: 600px) {
+/*For tablets*/
+	.img-container {
+		bottom: 43vh;
+		left: 40vw;	
+		width: 70vw;
+		height: 10vh;
+	}
+
+	.img-container h4 {
+		width: 100%;
+		margin-left: 5%;
+		margin-right: 5%;
+		font-size: 1rem;
+	}
+
+	.img-container button {
+		font-size: 0.7rem;
+	}
+
+	.img-container .button {
+		margin-right: 2vw;
+		width: 35%;
+		height: 35%;
+	}
+
+}
+
+
+@media screen and (min-width: 768px) {
+/*For deskstop*/
+
+	.img-container {
+		bottom: 25%;
+		left: 30%;	
+		width: 50vw;
+		height: 15vh;
+	}
+
+	.img-container h4 {
+		width: 100%;
+		margin-left: 5%;
+		margin-right: 5%;
+		font-size: 1rem;
+	}
+
+	.img-container button {
+		font-size: 0.7rem;
+	}
+
+	.img-container .button {
+		margin-right: 2vw;
+		width: 40%;
+		height: 35%;
+	}
+
+	.content {
+		width: 90vw;
+		height: 80vh;
+		margin: 0 auto;
+		border-radius: 5px;
+		padding: 5px;
+	}
+
+	.top {
+		margin-left: 2vw;
+		margin-bottom: 3px;
+	}
+
+	.top .back {
+		font-size: 1rem;
+		margin-top: 3vh;
+	}
+
+	.top .app-title {
+		font-size: 1.5rem;
+		margin-top: 3vh;
+	}
+
+	.weather-container__card {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 10px;
+		width: 85vw;
+	  	max-width: 1280px;
+		height: auto;
+		margin: 5vh auto;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.weather-container__card__section-one {
+		width: 100%;
+		height: 50vh;
+		border-right: none;
+		padding-top: 7vh;
+		margin-bottom: 0;
+		border-right: 1px solid #444;
+		border-bottom: none;
+	}
+
+	.weather-container__card__section-two {
+		width: 100%;
+		height: 50vh;
+		border-right: none;
+		padding-top: 7vh;
+		margin-bottom: 0;
+		border-right: 1px solid #444;
+		border-bottom: none;
+	}
+
+	.weather-container__card__section-three {
+		width: 100%;
+		margin-bottom: 0;
+		height: 50vh;
+		padding-top: 7vh;
+	}
+
+	.icon {
+		width: 6vw;
+		height: 8vh;
+	}
+
+	.date, .temp-day, .temp-night, .description, .icon, .sunrise, .sunset {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+/*For large screens*/
+
+	.img-container {
+		bottom: 0;
+		left: 27%;	
+		width: 100vw;
+		height: 15vh;
+	}
+
+	.img-container h4 {
+		width: 40vw;
+		height: 5vh;
+		margin-left: 1vw;
+		margin-right: 1vw;
+		font-size: 1.5em;
+	}
+
+	.img-container button {
+		font-size: 0.9em;
+	}
+
+	.img-container .button {
+		margin-right: 1vw;
+		width: 15vw;
+		height: 5vh;
+	}
+}
